@@ -12,6 +12,7 @@ chrome.tabs.query(
       contentConfirm.classList.add("contentConfirm");
       contentConfirm.innerHTML = "YOU ARE ALREADY AT HOME!";
       mainContent.appendChild(contentConfirm);
+      chrome.action.setIcon({ tabId: tab.id, path: "images/active.png" });
     } else {
       var contentRedirect = document.createElement("div");
       var a = document.createElement("a");
@@ -20,6 +21,7 @@ chrome.tabs.query(
       a.innerHTML = "Redirect to Home";
       mainContent.appendChild(contentRedirect);
       contentRedirect.appendChild(a);
+      chrome.action.setIcon({ tabId: tab.id, path: "images/wait.png" });
     }
     var links = document.getElementsByTagName("a");
     for (var i = 0; i < links.length; i++) {

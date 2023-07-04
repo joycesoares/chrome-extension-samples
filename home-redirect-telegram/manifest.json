@@ -5,7 +5,8 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
-    "default_icon": "images/active.png"
+    "default_icon": "images/active.png",
+    " 16": "images/wait.png"
   },
   "permissions": [
     "tabs"
