@@ -1,0 +1,48 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.head-main{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin-top: -5px;
+  box-shadow: 1px 2px 2px 1px #000;
+}
+.head-main h1{
+  text-transform: uppercase;
+}
+.main{
+  width: 350px;
+  height: 100px;
+  background-color: dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 5px solid #fff;
+}
+.contentRedirect, .contentConfirm {
+  font-size: 22px;
+  padding: 8px;
+  background-color: cornflowerblue;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contentConfirm {
+  background-color: darkgreen;
+  box-shadow:  1px 2px 2px 1px #000;
+}
+
+a {
+  text-decoration: none;
+  color:#fff
+}

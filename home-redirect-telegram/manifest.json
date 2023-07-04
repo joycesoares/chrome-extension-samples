@@ -1,0 +1,20 @@
+{
+  "name": "Telegram Home Redirector",
+  "description": "Telegram home redirector to not see open chats",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "images/active.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "icons": {
+    "48": "images/icon.png"
+},
+  "host_permissions": ["https://web.telegram.org/a/"]
+}
