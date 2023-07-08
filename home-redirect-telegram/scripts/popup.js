@@ -13,6 +13,9 @@ chrome.tabs.query(
       contentConfirm.innerHTML = "YOU ARE ALREADY AT HOME!";
       mainContent.appendChild(contentConfirm);
       chrome.action.setIcon({ tabId: tab.id, path: "images/active.png" });
+      setTimeout(() => {
+        window.close();
+      }, 2000);
     } else {
       var contentRedirect = document.createElement("div");
       var a = document.createElement("a");
